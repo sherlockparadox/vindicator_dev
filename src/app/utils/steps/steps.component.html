@@ -1,0 +1,16 @@
+<ul class="steps has-content-centered {{ style }}">
+  <ng-container *ngFor="let eachStep of list">
+    <li class="steps-segment {{ eachStep.segmentCall }}">
+      <a href="#" class="has-text-dark">
+        <span class="steps-marker {{ eachStep.markerClass }}">
+          <span class="icon">
+            <i class="fa {{ eachStep.icon }}"></i>
+          </span>
+        </span>
+        <div class="steps-content">
+          <p class="heading">{{ eachStep.title }}</p>
+        </div>
+      </a>
+    </li>
+  </ng-container>
+</ul>

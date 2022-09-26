@@ -1,16 +1,13 @@
-<head>
-  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    rel="stylesheet">
-</head>
-
 <div>
-  <section id="first-section" class="hero is-primary is-bold is-fullheight section-1">
+  <section
+    id="first-section"
+    class="hero is-primary is-bold is-fullheight section-1"
+  >
     <section class="head-navbar">
       <div class="navbar is-fixed-top">
         <div class="navbar-brand">
           <a class="navbar-item">
-            <img src="assets/img/logo.png"/>
+            <img src="assets/img/logo.png" />
           </a>
         </div>
         <!-- Navebar End Elements -->
@@ -18,17 +15,19 @@
           <div class="navbar-item">
             <a class="menu">Games</a>
           </div>
-      
+
           <div class="navbar-item">
             <a class="menu">Teams</a>
           </div>
-      
+
           <div class="navbar-item">
             <a class="menu">Contact us</a>
           </div>
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-rounded is-primary is-fullwidth login-btn">Login</a>
+              <a class="button is-rounded is-primary is-fullwidth login-btn"
+                >Login</a
+              >
             </div>
           </div>
         </div>
@@ -36,60 +35,13 @@
     </section>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title">
-          Developing communities & Redesigning gaming!
-        </h1>
+        <h1 class="title">Developing communities & Redesigning gaming!</h1>
       </div>
     </div>
   </section>
   <section id="process-section" class="hero is-link">
     <div class="container is-fluid mt-5 pb-5">
-      <ul class="steps is-vertical has-content-centered">
-        <li class="steps-segment is-active">
-          <a href="#" class="has-text-dark">
-            <span class="steps-marker">
-              <span class="icon">
-                <i class="fa fa-user-friends"></i>
-              </span>
-            </span>
-            <div class="steps-content">
-              <p class="heading">Get Invited</p>
-            </div>
-          </a>
-        </li>
-        <li class="steps-segment">
-          <a href="#" class="has-text-dark">
-            <span class="steps-marker">
-              <span class="icon">
-                <i class="fa fa-user"></i>
-              </span>
-            </span>
-            <div class="steps-content">
-              <p class="heading">Create Profile</p>
-            </div>
-          </a>
-        </li>
-        <li class="steps-segment has-gaps">
-          <span class="steps-marker">
-            <span class="icon">
-              <i class="fa fa-id-card"></i>
-            </span>
-          </span>
-          <div class="steps-content">
-            <p class="heading">Complete Verification</p>
-          </div>
-        </li>
-        <li class="steps-segment">
-          <span class="steps-marker is-hollow">
-            <span class="icon">
-              <i class="fa fa-check"></i>
-            </span>
-          </span>
-          <div class="steps-content">
-            <p class="heading">Confirmation</p>
-          </div>
-        </li>
-      </ul>
+      <app-steps [list]="parentList" [style]="'is-vertical'"></app-steps>
     </div>
   </section>
 </div>
